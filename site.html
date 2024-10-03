@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcionalidade em Breve</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            background-color: #1e1e1e;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        p.explanation {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+        }
+
+        p.details {
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #3a3a3a;
+            border: none;
+            border-radius: 5px;
+            color: #ffffff;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #5a5a5a;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Funcionalidade em Breve</h1>
+        <p class="explanation">Estamos trabalhando duro para trazer novidades incríveis! A funcionalidade que você espera ainda está em desenvolvimento. Agradecemos sua paciência e interesse.</p>
+        <p class="details">Em breve, você poderá participar de um quiz emocionante! Quem acertar mais perguntas dentro de um determinado tempo ganhará uma recompensa de R$50. Não é uma aposta, mas uma chance de ganhar um prêmio, com todo o conteúdo disponível no app.</p>
+        <button id="notifyButton">Notifique-me quando estiver disponível</button>
+    </div>
+
+    <script>
+        document.getElementById("notifyButton").addEventListener("click", function() {
+            alert("Você será notificado quando a funcionalidade estiver disponível!");
+        });
+
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "F12") {
+                event.preventDefault();
+                alert("O uso do Inspecionar foi bloqueado.");
+            }
+        });
+
+        document.addEventListener("contextmenu", function(event) {
+            event.preventDefault();
+            alert("O uso do menu de contexto foi bloqueado.");
+        });
+    </script>
+</body>
+</html>
